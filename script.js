@@ -1,11 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var passwordLength;
-var checkUpper;
-var checkLower;
-var checkNumber;
-var checkCharacter;
-var userInupt;
 
 
 // Write password to the #password input
@@ -22,7 +16,7 @@ generateBtn.addEventListener("click", writePassword);
 
 //generate password function
 function generatePassword(){
-  passwordLength=prompt("choose between 8 and 128 characters");
+  var passwordLength = prompt("choose between 8 and 128 characters");
   console.log("password length " + passwordLength);
 
   if(!passwordLength) {
@@ -39,4 +33,6 @@ function generatePassword(){
     checkNumber = confirm("any numbers?");
     checkCharacter = confirm("any special characters?");
   };  
+  
 }
+//unfinished code ran out of time and wanted to submit something 
